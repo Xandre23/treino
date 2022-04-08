@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,27 +16,27 @@ namespace ConsoleApp3
         }
         public static void ex1001()
         {
-           int a = Convert.ToInt32(Console.ReadLine());
-           int b = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
             int x = a + b;
 
-            Console.WriteLine("X = " +x);
+            Console.WriteLine("X = " + x);
         }
         public static void ex1002()
         {
-            double pi= 3.14159;
-            
+            double pi = 3.14159;
+
 
             double raio = Convert.ToDouble(Console.ReadLine());
 
-                double a = pi * (raio * raio);
+            double a = pi * (raio * raio);
 
-                Console.WriteLine("A="+a.ToString("0.0000"));
+            Console.WriteLine("A=" + a.ToString("0.0000"));
         }
         public static void ex1003()
         {
-           int a = Convert.ToInt32(Console.ReadLine());
-           int b = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
 
             int soma = a + b;
             Console.WriteLine("SOMA = " + soma);
@@ -53,15 +54,15 @@ namespace ConsoleApp3
         }
         public static void ex1005()
         {
-        const double a = 3.5;
-        const double b = 7.5;
+            const double a = 3.5;
+            const double b = 7.5;
 
-          double  nota1 = Convert.ToDouble(Console.ReadLine());
-          double  nota2 = Convert.ToDouble(Console.ReadLine());
+            double nota1 = Convert.ToDouble(Console.ReadLine());
+            double nota2 = Convert.ToDouble(Console.ReadLine());
 
-          double media = (nota1 * a + nota2 * b) / (a +b);
-  
-           Console.WriteLine("MEDIA = " + media.ToString("0.00000"));
+            double media = (nota1 * a + nota2 * b) / (a + b);
+
+            Console.WriteLine("MEDIA = " + media.ToString("0.00000"));
         }
         public static void ex1006()
         {
@@ -84,9 +85,9 @@ namespace ConsoleApp3
             int c = Convert.ToInt32(Console.ReadLine());
             int d = Convert.ToInt32(Console.ReadLine());
 
-                int diff = a * b - c * d;
+            int diff = a * b - c * d;
 
-                    Console.WriteLine("DIFERENCA = "+ diff);
+            Console.WriteLine("DIFERENCA = " + diff);
         }
         public static void ex1008()
         {
@@ -104,15 +105,35 @@ namespace ConsoleApp3
         {
             string nome = Convert.ToString(Console.ReadLine());
             double salario = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Digite o total de vendas efetuadas no mês em dinheiro");
-                double vendas = Convert.ToDouble(Console.ReadLine());
+            double vendas = Convert.ToDouble(Console.ReadLine());
 
             double comissao = salario + vendas * 0.15;
 
-
             Console.WriteLine("TOTAL = R$ " + comissao.ToString("0.00"));
+        }
+        public static void ex1010()
+        {
+            //diff
+            int codigoUm, quantidadeUm;
+            double valorUm;
+            int codigoDois, quantidadeDois;
+            double valorDois;
+            double soma;
 
+            string[] vetUm = Console.ReadLine().Split(' ');
+            string[] vetDois = Console.ReadLine().Split(' ');
 
+            codigoUm = int.Parse(vetUm[0]);
+            quantidadeUm = int.Parse(vetUm[1]);
+            valorUm = double.Parse(vetUm[2]);
+
+            codigoDois = int.Parse(vetDois[0]);
+            quantidadeDois = int.Parse(vetDois[1]);
+            valorDois = double.Parse(vetDois[2]);
+
+            soma = (quantidadeUm * valorUm) + (quantidadeDois * valorDois);
+
+            Console.WriteLine("VALOR A PAGAR: R$ " + soma.ToString("0.00"));
         }
 
         static void Main(string[] args)
@@ -160,6 +181,9 @@ namespace ConsoleApp3
                         break;
                     case 9:
                         logica.ex1009();
+                        break;
+                    case 10:
+                        logica.ex1010();
                         break;
 
                     default:
