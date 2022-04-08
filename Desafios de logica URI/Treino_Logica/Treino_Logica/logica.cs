@@ -99,6 +99,18 @@ namespace ConsoleApp3
 
             Console.WriteLine("NUMBER = " + numero);
             Console.WriteLine("SALARY = U$ " + salario.ToString("0.00"));
+        }
+        public static void ex1009()
+        {
+            string nome = Convert.ToString(Console.ReadLine());
+            double salario = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o total de vendas efetuadas no mês em dinheiro");
+                double vendas = Convert.ToDouble(Console.ReadLine());
+
+            double comissao = salario + vendas * 0.15;
+
+
+            Console.WriteLine("TOTAL = R$ " + comissao.ToString("0.00"));
 
 
         }
@@ -145,6 +157,9 @@ namespace ConsoleApp3
                         break;
                     case 8:
                         logica.ex1008();
+                        break;
+                    case 9:
+                        logica.ex1009();
                         break;
 
                     default:
