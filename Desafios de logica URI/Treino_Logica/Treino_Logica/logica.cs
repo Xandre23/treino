@@ -77,6 +77,20 @@ namespace ConsoleApp3
 
             Console.WriteLine("MEDIA = " + media.ToString("0.0"));
         }
+        public static void ex1007()
+        {
+
+
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+            int d = Convert.ToInt32(Console.ReadLine());
+
+            int diff = a * b - c * d;
+
+            Console.WriteLine("DIFERENCA = "+ diff);
+
+        }
 
         static void Main(string[] args)
         {
@@ -114,6 +128,9 @@ namespace ConsoleApp3
                         break;
                     case 6:
                         logica.ex1006();
+                        break;
+                    case 7:
+                        logica.ex1007();
                         break;
 
                     default:
