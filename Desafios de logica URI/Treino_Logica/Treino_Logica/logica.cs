@@ -79,16 +79,27 @@ namespace ConsoleApp3
         }
         public static void ex1007()
         {
-
-
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
             int c = Convert.ToInt32(Console.ReadLine());
             int d = Convert.ToInt32(Console.ReadLine());
 
-            int diff = a * b - c * d;
+                int diff = a * b - c * d;
 
-            Console.WriteLine("DIFERENCA = "+ diff);
+                    Console.WriteLine("DIFERENCA = "+ diff);
+        }
+        public static void ex1008()
+        {
+            Console.WriteLine("************* Informações do funcionario ****************");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            double horastrab = Convert.ToDouble(Console.ReadLine());
+            double valor = Convert.ToDouble(Console.ReadLine());
+
+            double salario = horastrab * valor;
+
+            Console.WriteLine("NUMBER = " + numero);
+            Console.WriteLine("SALARY = U$ " + salario.ToString("0.00"));
+
 
         }
 
@@ -131,6 +142,9 @@ namespace ConsoleApp3
                         break;
                     case 7:
                         logica.ex1007();
+                        break;
+                    case 8:
+                        logica.ex1008();
                         break;
 
                     default:
