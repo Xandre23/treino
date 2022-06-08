@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LOGICA_CADASTRO", "LOGICA_LOGIN\LOGICA_CADASTRO.csproj", "{4D94C87A-10D3-4BC4-ABC0-FF41234B5580}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D94C87A-10D3-4BC4-ABC0-FF41234B5580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D94C87A-10D3-4BC4-ABC0-FF41234B5580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D94C87A-10D3-4BC4-ABC0-FF41234B5580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D94C87A-10D3-4BC4-ABC0-FF41234B5580}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06C932F9-29A8-4522-9081-C45E6F7ADAC8}
+	EndGlobalSection
+EndGlobal
