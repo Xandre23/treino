@@ -135,6 +135,16 @@ namespace ConsoleApp3
 
             Console.WriteLine("VALOR A PAGAR: R$ " + soma.ToString("0.00"));
         }
+         public static void ex1011()
+        {
+         // valor do raio
+        Console.WriteLine("valor de seu raio (R): ");
+        double valorRaio = double.Parse(Console.ReadLine());
+
+        double volumeEsfera = (4 * 3.14159 * Math.Pow(valorRaio, 3)) / 3;
+
+        Console.WriteLine("VOLUME = " + volumeEsfera.ToString("F3"));
+        }
 
         static void Main(string[] args)
         {
@@ -184,6 +194,9 @@ namespace ConsoleApp3
                         break;
                     case 10:
                         logica.ex1010();
+                        break;
+                     case 11:
+                        logica.ex1011();
                         break;
 
                     default:
