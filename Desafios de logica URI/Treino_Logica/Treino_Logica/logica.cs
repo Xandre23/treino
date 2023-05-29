@@ -186,6 +186,15 @@ namespace ConsoleApp3
             Console.WriteLine(c + " eh o maior");
         }   
     }
+           public static void ex1014()
+        {
+         int totalPercorrido = int.Parse(Console.ReadLine());
+          double combustivelGasto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
+
+        double consumoMedio = (int)totalPercorrido / (double)combustivelGasto;
+
+        Console.WriteLine(consumoMedio.ToString("#.000") + " km/l");
+        }
 
 
         static void Main(string[] args)
@@ -245,6 +254,9 @@ namespace ConsoleApp3
                         break;
                     case 13:
                         logica.ex1013();
+                        break;
+                    case 14:
+                        logica.ex1014();
                         break;
 
                     default:
