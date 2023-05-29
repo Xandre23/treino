@@ -40,8 +40,6 @@ namespace ConsoleApp3
 
             int soma = a + b;
             Console.WriteLine("SOMA = " + soma);
-
-
         }
         public static void ex1004()
         {
@@ -195,8 +193,7 @@ namespace ConsoleApp3
 
         Console.WriteLine(consumoMedio.ToString("#.000") + " km/l");
         }
-
-
+        
         static void Main(string[] args)
         {
             int escolha;
