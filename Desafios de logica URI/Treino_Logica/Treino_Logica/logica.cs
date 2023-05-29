@@ -194,6 +194,25 @@ namespace ConsoleApp3
         Console.WriteLine(consumoMedio.ToString("#.000") + " km/l");
         }
         
+             public static void ex1015()
+        {
+       string[] ponto1 = Console.ReadLine().Split(' ');
+
+        double x1 = double.Parse(ponto1[0], CultureInfo.InvariantCulture);
+        double y1 = double.Parse(ponto1[1], CultureInfo.InvariantCulture);
+
+
+        string[] ponto2 = Console.ReadLine().Split(' ');
+
+        double x2 = double.Parse(ponto2[0], CultureInfo.InvariantCulture);
+        double y2 = double.Parse(ponto2[1], CultureInfo.InvariantCulture);
+
+        double distancia = Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
+
+        Console.WriteLine(distancia.ToString("N4"), CultureInfo.InvariantCulture);
+        }
+        
+        
         static void Main(string[] args)
         {
             int escolha;
@@ -254,6 +273,9 @@ namespace ConsoleApp3
                         break;
                     case 14:
                         logica.ex1014();
+                        break;
+                    case 15:
+                        logica.ex1015();
                         break;
 
                     default:
