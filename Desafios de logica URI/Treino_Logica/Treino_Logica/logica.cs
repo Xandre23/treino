@@ -166,6 +166,26 @@ namespace ConsoleApp3
        Console.WriteLine("QUADRADO: " + areaQuadrado.ToString("N3"), CultureInfo.InvariantCulture);
        Console.WriteLine("RETANGULO: " + areaRetangulo.ToString("N3"), CultureInfo.InvariantCulture);
         }
+            public static void ex1013()
+        {
+              string[] vet = Console.ReadLine().Split(' ');
+
+        int a = int.Parse(vet[0]);
+        int b = int.Parse(vet[1]);
+        int c = int.Parse(vet[2]);
+
+        int MaiorAB = 0;
+        MaiorAB=(a+b+Math.Abs(a - b))/2;
+
+        if (MaiorAB > c)
+        {
+            Console.WriteLine(MaiorAB + " eh o maior");
+            }
+        else
+        {
+            Console.WriteLine(c + " eh o maior");
+        }   
+    }
 
 
         static void Main(string[] args)
@@ -222,6 +242,9 @@ namespace ConsoleApp3
                         break;
                     case 12:
                         logica.ex1012();
+                        break;
+                    case 13:
+                        logica.ex1013();
                         break;
 
                     default:
