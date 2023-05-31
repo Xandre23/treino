@@ -211,6 +211,15 @@ namespace ConsoleApp3
 
         Console.WriteLine(distancia.ToString("N4"), CultureInfo.InvariantCulture);
         }
+         public static void ex1016()
+        {
+        Console.WriteLine("distância (em Km)");
+        int distancia = int.Parse(Console.ReadLine());
+
+        int tempo = distancia * 2;
+
+        Console.WriteLine(tempo + " minutos");
+        }
         
         
         static void Main(string[] args)
@@ -276,6 +285,9 @@ namespace ConsoleApp3
                         break;
                     case 15:
                         logica.ex1015();
+                        break;
+                    case 16:
+                        logica.ex1016();
                         break;
 
                     default:
