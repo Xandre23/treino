@@ -220,6 +220,18 @@ namespace ConsoleApp3
 
         Console.WriteLine(tempo + " minutos");
         }
+        public static void ex1017()
+        {
+        Console.WriteLine("Tempo gasto em horas: ");
+        int tmpGasto = int.Parse(Console.ReadLine());
+        Console.WriteLine("Velocidade média durante a mesma em km/h:  ");
+        int veloMedia = int.Parse(Console.ReadLine());
+
+        double litros = tmpGasto * veloMedia;
+        double media = litros / 12;
+            
+        Console.WriteLine(media.ToString("N3"));
+        }
         
         
         static void Main(string[] args)
@@ -288,6 +300,9 @@ namespace ConsoleApp3
                         break;
                     case 16:
                         logica.ex1016();
+                        break;
+                         case 17:
+                        logica.ex1017();
                         break;
 
                     default:
