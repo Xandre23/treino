@@ -233,6 +233,47 @@ namespace ConsoleApp3
         Console.WriteLine(media.ToString("N3"));
         }
         
+         public static void ex1018()
+        {
+         //exercicio confuso.
+
+        int valorLido, nota100, nota50, nota20, nota10, nota5, nota2, nota1;
+
+        valorLido = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(valorLido);
+
+        nota100 = valorLido / 100;
+        valorLido = valorLido% 100;
+
+        nota50 = valorLido / 50;
+        valorLido = valorLido % 50;
+
+        nota20 = valorLido / 20;
+        valorLido = valorLido % 20;
+
+        nota10 = valorLido / 10;
+        valorLido = valorLido % 10;
+
+        nota5 = valorLido / 5;
+        valorLido = valorLido % 5;
+
+        nota2 = valorLido / 2;
+        valorLido = valorLido % 2;
+
+        nota1 = valorLido / 1;
+        valorLido = valorLido % 1;
+
+        
+        Console.WriteLine(nota100 + " nota(s) de R$ 100,00");
+        Console.WriteLine(nota50 + " nota(s) de R$ 50,00");
+        Console.WriteLine(nota20 + " nota(s) de R$ 20,00");
+        Console.WriteLine(nota10 + " nota(s) de R$ 10,00");
+        Console.WriteLine(nota5 + " nota(s) de R$ 5,00");
+        Console.WriteLine(nota2 + " nota(s) de R$ 2,00");
+        Console.WriteLine(nota1 + " nota(s) de R$ 1,00");
+        }
+        
         
         static void Main(string[] args)
         {
@@ -301,10 +342,13 @@ namespace ConsoleApp3
                     case 16:
                         logica.ex1016();
                         break;
-                         case 17:
+                     case 17:
                         logica.ex1017();
                         break;
-
+                      case 18:
+                        logica.ex1018();
+                        break;
+                        
                     default:
                         Console.Write("Opção Invalida");
                         break;
